@@ -158,6 +158,7 @@ main .sobre-nosotros{
 .imagen-port {
     width: 24%;
     margin-bottom: 10px;
+    height: 200px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -176,7 +177,13 @@ main .sobre-nosotros{
     width: 100%;
     height: 100%;
     top: 0;
-    transform: scale(0);
+   transform: scale(0);
+   background: hsla(237, 91%, 27%, 0.67);
+   transition: transform .5s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
 
 .hover-galeria img{
@@ -184,6 +191,10 @@ main .sobre-nosotros{
 }
 .hover-galeria p{
     color: white;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
 }
 
 /* Clients */
@@ -260,36 +271,32 @@ margin: 10px 0;
 
 /* Footer */
 
-footer{
-    background: #4e54c8;
-    padding: 60px 0 30px 0;
+.footer-content {
+    max-width: 77.5rem;
     margin: auto;
-    overflow: hidden;
 }
 
-.contenedor-footer {
+.footer-content-about {
+    max-width: 51.3rem;
+    margin:  0 auto 5.4rem;
+}
+
+.footer-div{
     display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #3e318f;
+    justify-content: space-between;
 }
 
-.content-foo {
-    text-align: center;
-
+.social-media,
+.news-form {
+    width: 100%;
+    max-width: 27.3rem;
+    margin: 0 1rem;
 }
 
-.content-foo h4{
-    color: #fff;
-    border-bottom: 3px solid #320c3b;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+.news-btn {
+   margin-left: 7.5rem;
 }
 
-.content-foo p{
-    color: #fff;
 }
 
 @media screen and (max-width: 900px) {

@@ -98,15 +98,34 @@ nav > a:hover{
     padding: 1.8em 1em;
     margin-bottom: .5em ;
 }
-.form-cta{
-    font-family: inherit;
-    font-size: 1rem;
-    background-color: #089fe0;
+.button{
     color: #fff;
-    font-weight: 400;
-    padding: .7em   0;
-    border-radius: .2em;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 40px;
     cursor: pointer;
+    border: 0;
+    border-radius: 50px;
+    transition: all 0.20s linear;
+    -webkit-transition: all 0.20s linear;
+    -moz-transition: all 0.20s linear;
+    position: relative;
+    bottom: 0;
+}
+
+.azul {
+    background: #04a8bf;
+    box-shadow: 0px 5px 0 #0491a5
+}
+
+.button:active{
+    bottom: -5px;
+}
+
+.azul:active{
+    box-shadow:0 0 0 #0491a5, inset 0 0 5px rgba(0, 0, 0, 0.4);         
 }
 
 /* Footer */
