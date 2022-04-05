@@ -174,6 +174,35 @@ footer{
         grid-template: 100px /
         200px auto;
     }
+    .button{
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 20px 40px;
+        cursor: pointer;
+        border: 0;
+        border-radius: 50px;
+        transition: all 0.20s linear;
+        -webkit-transition: all 0.20s linear;
+        -moz-transition: all 0.20s linear;
+        position: relative;
+        bottom: 0;
+    }
+    
+    .azul {
+        background: #04a8bf;
+        box-shadow: 0px 5px 0 #0491a5
+    }
+    
+    .button:active{
+        bottom: -5px;
+    }
+    
+    .azul:active{
+        box-shadow:0 0 0 #0491a5, inset 0 0 5px rgba(0, 0, 0, 0.4);         
+    }
 
     
 }
@@ -226,6 +255,36 @@ footer{
         resize: none;
         padding: 1em 0.5em;
         margin-bottom: .5em ;
+    }
+
+    .button{
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 20px 40px;
+        cursor: pointer;
+        border: 0;
+        border-radius: 50px;
+        transition: all 0.20s linear;
+        -webkit-transition: all 0.20s linear;
+        -moz-transition: all 0.20s linear;
+        position: relative;
+        bottom: 0;
+    }
+    
+    .azul {
+        background: #04a8bf;
+        box-shadow: 0px 5px 0 #0491a5
+    }
+    
+    .button:active{
+        bottom: -5px;
+    }
+    
+    .azul:active{
+        box-shadow:0 0 0 #0491a5, inset 0 0 5px rgba(0, 0, 0, 0.4);         
     }
     .contenedor-footer{
         flex-direction: column;
